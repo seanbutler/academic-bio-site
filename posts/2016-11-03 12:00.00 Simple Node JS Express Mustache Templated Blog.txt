@@ -1,0 +1,20 @@
+<div class = "container">
+    <div class="row">
+
+        <div class = "three columns">
+            <h4>3rd November 2016</h4>
+        </div>
+
+        <div class = "nine columns">
+            <h4>Simple Templated Blog System.</h4>
+            <p></p>
+            <ul>
+                <li> skeleton.io - small & simple css boilerplate, smaller than bootstrap, but looks nice out of the box</li>
+                <li> Express - node middleware for http & routing</li>
+                <li> node.js - execution on the server hardware</li>
+                <li> mustache - for quick and easy templating on node in javascript</li>
+            </ul>
+
+        </div>
+    </div>
+</div>
