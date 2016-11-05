@@ -53,7 +53,6 @@ App.get('/cv', function (req, res) {
 
 // ----------------------------------------------------------------------------
 
-
 //
 // PAGE GENERATION from CONTENT with PARTIALS Build in
 //

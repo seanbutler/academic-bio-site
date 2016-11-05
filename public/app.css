@@ -1,24 +1,65 @@
-h1, h2, h3, h4, h5, h6
+body
 {
-    /*color: #F80;*/
-    font-family: 'Playfair Display', serif;
-    /*font-family: 'Gilda Display', serif;*/
+    /*background: #C00;*/
+    background: #EEE;
+    color: #555;
 }
 
+h1, h2, h3, h4, h5, h6
+{
+    /*color: orange;*/
+    margin-top: 0;
+    /*font-family: 'Playfair Display', serif;
+    font-family: 'Gilda Display', serif;*/
+    font-weight: 100;
+}
+
+/*h1 {
+    border-bottom:  2px solid #222;
+}*/
+
+
 a {
-  /*color: #F80;*/
+    /*color: black;*/
+  color: orange;
+  text-decoration: none;
 }
 
 a:hover {
-  /*color: #08F;*/
+  color: orange;
+  text-decoration:underline;
 }
 
 th,
 td {
-  padding: 5px 15px 0px 15px;
-  text-align: left;
-  border-bottom: 0px;
+    padding: 5px 15px 0px 15px;
+    text-align: left;
+    border-bottom: 0px;
 }
+
 th {
-    border-bottom: 1px solid #E1E1E1;
+    /*border-bottom: 1px solid;*/
+    /*border-bottom: 1px solid black;*/
+}
+
+.content {
+    margin-top: 3rem;
+    /*border: 1px dashed blue;*/
+}
+
+.section {
+    margin-top: 3rem;
+    /*border: 1px dashed green;*/
+}
+
+.navigation {
+    border-top: 1px solid orange;
+    border-bottom: 1px solid orange;
+    padding: 1em 0 1em 0;
+}
+
+.footer {
+    margin-top: 32px;
+    border-top: 1px solid orange;
+    padding-top: 32px;
 }
