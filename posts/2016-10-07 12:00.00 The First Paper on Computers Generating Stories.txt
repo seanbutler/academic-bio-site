@@ -1,6 +1,5 @@
 <div class = "container content">
     <div class="row section">
-
         <div class = "three columns">
             <h4>7th october 2016</h4>
         </div>

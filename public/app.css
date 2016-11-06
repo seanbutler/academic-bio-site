@@ -1,74 +1,44 @@
 
-
-
-
-
 body
 {
-    /*background: #C00;*/
-    /*background: #8B8589;*/
-    /*background: #483C32;*/
-    background: #181818;
-    /*background: darkorange;*/
-    color: white;
+    color: #692d55;
+    background: #faf5eb;
 }
 
 h1, h2, h3, h4, h5, h6
 {
-    /*color: white;*/
-    /*color: orange;*/
-    margin-top: 0;
-    /*font-family: 'Playfair Display', serif;
-    font-family: 'Gilda Display', serif;*/
+    /*font-family: 'Playfair Display', serif;*/
+    /*font-family: 'Gilda Display', serif;*/
+    color: #f53c3c;
 }
 
-/*h1 {
-    border-bottom:  2px solid #222;
-}*/
-
-
 a {
-    /*color: black;*/
-  color: white;
-  text-decoration:underline;  /*text-decoration: none;*/
+    color: #692d55;
+    /*text-decoration:underline;  */
+    text-decoration: none;
 }
 
 a:hover {
-  color: white;
-  text-decoration:none;
-
+    color: #692d55;
+    text-decoration:underline;  /*text-decoration: none;*/
 }
 
-th,
-td {
-    padding: 5px 15px 0px 15px;
+th, td {
+    padding: 0.5rem 1.5rem 0 1.5rem;
     text-align: left;
     border-bottom: 0px;
 }
 
-th {
-    /*border-bottom: 1px solid;*/
-    /*border-bottom: 1px solid black;*/
-}
 
 .content {
     margin-top: 4rem;
-    /*border: 1px dashed blue;*/
 }
 
 .section {
     margin-top: 4rem;
-    /*border: 1px dashed green;*/
 }
 
 .navigation {
-    /*border-top: 1px solid lightgrey;*/
-    /*border-bottom: 1px solid lightgrey;*/
     margin: 0;
     padding: 0 0 1em 0;
-}
-
-.footer {
-    margin-top: 4rem;
-    /*border-top: 1px solid lightgrey;*/
 }
