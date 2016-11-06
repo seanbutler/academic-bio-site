@@ -1,9 +1,15 @@
+
+
+
+
+
 body
 {
     /*background: #C00;*/
     /*background: #8B8589;*/
     /*background: #483C32;*/
-    background: #222;
+    background: #181818;
+    /*background: darkorange;*/
     color: white;
 }
 
@@ -14,7 +20,6 @@ h1, h2, h3, h4, h5, h6
     margin-top: 0;
     /*font-family: 'Playfair Display', serif;
     font-family: 'Gilda Display', serif;*/
-    font-weight: 900;
 }
 
 /*h1 {
