@@ -1,7 +1,9 @@
 body
 {
     /*background: #C00;*/
-    background: black;
+    /*background: #8B8589;*/
+    /*background: #483C32;*/
+    background: #222;
     color: white;
 }
 
@@ -22,12 +24,13 @@ h1, h2, h3, h4, h5, h6
 
 a {
     /*color: black;*/
-  color: lightgrey;
+  color: white;
   text-decoration:underline;  /*text-decoration: none;*/
 }
 
 a:hover {
   color: white;
+  text-decoration:none;
 
 }
 
@@ -44,12 +47,12 @@ th {
 }
 
 .content {
-    margin-top: 3rem;
+    margin-top: 4rem;
     /*border: 1px dashed blue;*/
 }
 
 .section {
-    margin-top: 3rem;
+    margin-top: 4rem;
     /*border: 1px dashed green;*/
 }
 
@@ -61,7 +64,6 @@ th {
 }
 
 .footer {
-    margin-top: 32px;
+    margin-top: 4rem;
     /*border-top: 1px solid lightgrey;*/
-    padding-top: 32px;
 }
