@@ -139,11 +139,18 @@ function GeneratePage(req, res, pageFilename)
 // ----------------------------------------------------------------------------
 
 App.get('/blog', function (req, res) {
-    GeneratePost(req, res, "string");
+    var fileList = ScanDir('./posts/');
+    GeneratePosts(req, res, fileList);
 });
 
+function ScanDir(path) {
+    const fs = require('fs');
+    var dirList = fs.readdirSync(path);
+    console.log(dirList);
+    return dirList;
+}
 
-function GeneratePost(req, res, postDetails)
+function GeneratePosts(req, res, postFilenames)
 {
     var layoutFilename = "components/layout.mustache";
 
@@ -177,29 +184,36 @@ function GeneratePost(req, res, postDetails)
 
                     var footerPartialFilename = "components/footer.mustache";
 
+                    var output = "";
+
                     fs.readFile(footerPartialFilename, 'utf8', function(err, footerContents) {
                         if (err) throw err;
                         // console.log('Partial Read: ' + footerPartialFilename);
                         // console.log(footerContents);
 
-                        var pagePartialFilename = "posts/2016-10-07 12:00.00 The First Paper on Computers Generating Stories.txt";
+                        postFilenames.forEach(file => {
 
-                        fs.readFile(pagePartialFilename, 'utf8', function(err, pageContents) {
-                            if (err) throw err;
-                            // console.log('Partial Read: ' + pagePartialFilename);
-                            // console.log(pageContents);
+                            // var pagePartialFilename = "posts/2016-10-07 12:00.00 The First Paper on Computers Generating Stories.txt";
 
-                            var partials = {
-                                header: headerContents,
-                                title: titleContents,
-                                navigation: navContents,
-                                footer: footerContents,
-                                page: pageContents
-                            };
+                            fs.readFile("./posts/" + file, 'utf8', function(err, pageContents) {
+                                if (err) throw err;
+                                // console.log('Partial Read: ' + pagePartialFilename);
+                                // console.log(pageContents);
 
-                            var output = Mustache.render(layoutContents, view, partials);
-                            // console.log("Output: " + output);
-                            res.send(output);
+                                var partials = {
+                                    header: headerContents,
+                                    title: titleContents,
+                                    navigation: navContents,
+                                    footer: footerContents,
+                                    page: pageContents
+                                };
+
+                                output += Mustache.render(layoutContents, view, partials);
+                          });
+
+                          res.send(output);
+                          console.log(file);
+
                         });
                     });
                 });

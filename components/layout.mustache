@@ -7,8 +7,20 @@
     </head>
 
     <body>
-        {{>header}}
-        {{>page}}
-        {{>footer}}
+        <div class = "container content">
+
+            <div class="row section">
+                <div class = "three columns ">
+                    {{>header}}
+                </div>
+                <div class = "nine columns ">
+                    {{>page}}
+                </div>
+            </div>
+
+            <div class="row section">
+                {{>footer}}
+            </div>
+        </div>
     </body>
 </html>

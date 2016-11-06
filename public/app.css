@@ -1,17 +1,18 @@
 body
 {
     /*background: #C00;*/
-    background: #EEE;
-    color: #555;
+    background: black;
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6
 {
+    /*color: white;*/
     /*color: orange;*/
     margin-top: 0;
     /*font-family: 'Playfair Display', serif;
     font-family: 'Gilda Display', serif;*/
-    font-weight: 100;
+    font-weight: 900;
 }
 
 /*h1 {
@@ -21,13 +22,13 @@ h1, h2, h3, h4, h5, h6
 
 a {
     /*color: black;*/
-  color: orange;
-  text-decoration: none;
+  color: lightgrey;
+  text-decoration:underline;  /*text-decoration: none;*/
 }
 
 a:hover {
-  color: orange;
-  text-decoration:underline;
+  color: white;
+
 }
 
 th,
@@ -53,13 +54,14 @@ th {
 }
 
 .navigation {
-    border-top: 1px solid orange;
-    border-bottom: 1px solid orange;
-    padding: 1em 0 1em 0;
+    /*border-top: 1px solid lightgrey;*/
+    /*border-bottom: 1px solid lightgrey;*/
+    margin: 0;
+    padding: 0 0 1em 0;
 }
 
 .footer {
     margin-top: 32px;
-    border-top: 1px solid orange;
+    /*border-top: 1px solid lightgrey;*/
     padding-top: 32px;
 }
