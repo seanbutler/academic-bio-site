@@ -7,7 +7,8 @@ a simple node dynamic website featuring templates, pages & a simple blog.
 * mustache - templates
 * skeleton - boilerplate css so default is neat
 
-currently used for my academic bio & blog, super simple, probably needs refactoring
+currently used for my academic bio & blog, super simple, needs software design/refactoring
+you can see it in action here... https://academic-bio-site.herokuapp.com/
 
 done
 ---
@@ -18,12 +19,10 @@ done
 todo
 ---
 
-
 * add blog feature to only get latest post
 * add blog feature to show latest few by parameter (total)
 * add blog feature to show specific few by parameter (total)
 * add blog feature to show specific post by simple query, exact title, exact date/time, etc
 * blog post tags?
-
 * handle errors/exceptions better
 * integrate markdown or similar
