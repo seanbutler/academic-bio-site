@@ -1,35 +1,14 @@
-<div class = "container">
+<div class = "twelve columns animated fadeIn">
 
-    <div class="row">
+    <h2>some notes on tale-spin. an early computer story writer</h2>
+    <h6>7th october 2016</h6>
 
-        <div class = "three columns">
-            <h4>7th October 2016</h4>
-        </div>
-
-        <div class = "nine columns">
-
-            <h4>Some Notes on Tale-Spin. An Early Computer Story Writer.</h4>
-
-            <p>Klein, S. et al (1973) Automatic Novel Writing. University of Wisconsin Technical Report.</p>
-
-            <h5>overview</h5>
-            <ul>
-                <li>modeled a mini-universe to simulate the story.</li>
-                <li>characters and events were governed by rules within the system.</li>
-                <li>used a semantic network to store the current state of the universe, the situation. also semantic network to encode the rules by which changes to the universe could happen, the events.</li>
-                <li>translation into english was carried out by a separate system of production rules.</li>
-            </ul>
-
-            <h5>overview</h5>
-            <ul>
-                <li>modeled a mini-universe to simulate the story.</li>
-                <li>characters and events were governed by rules within the system.</li>
-                <li>used a semantic network to store the current state of the universe, the situation. also semantic network to encode the rules by which changes to the universe could happen, the events.</li>
-                <li>translation into english was carried out by a separate system of production rules.</li>
-            </ul>
-
-        </div>
-
-    </div>
+    <p>klein, s. et al (1973) automatic novel writing. university of wisconsin technical report.</p>
+    <ul>
+        <li>modeled a mini-universe to simulate the story.</li>
+        <li>characters and events were governed by rules within the system.</li>
+        <li>used a semantic network to store the current state of the universe, the situation. also semantic network to encode the rules by which changes to the universe could happen, the events.</li>
+        <li>translation into english was carried out by a separate system of production rules.</li>
+    </ul>
 
 </div>

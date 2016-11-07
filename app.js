@@ -21,6 +21,8 @@ App.listen(process.env.PORT || 3000, function () {
   console.log('Example app listening on port 3000!');
 });
 
+
+
 // ----------------------------------------------------------------------------
 
 //
@@ -57,84 +59,55 @@ App.get('/cv', function (req, res) {
 // PAGE GENERATION from CONTENT with PARTIALS Build in
 //
 
-function GeneratePage(req, res, pageFilename)
+var layoutFilename, layoutContents;
+var headerPartialFilename, headerPartialContents;
+var titlePartialFilename, titlePartialContents;
+var navPartialFilename, navPartialContents;
+var footerPartialFilename, footerPartialContents;
+
+InitialisePartials();
+
+function InitialisePartials()
 {
-    var output = "<H1>ERROR</h1><hr />";
+    layoutFilename = "components/layout.mustache";
+    layoutContents = fs.readFileSync(layoutFilename, 'utf8');
 
-    var layoutFilename = "components/layout.mustache";
+    headerPartialFilename = "components/header.mustache";
+    headerPartialContents = fs.readFileSync(headerPartialFilename, 'utf8');
 
-    fs.readFile(layoutFilename, 'utf8', function(err, layoutContents) {
-        if (err) throw err;
-        console.log('Layout Read: ' + layoutFilename);
-        // console.log(layoutContents);
+    titlePartialFilename = "components/title.mustache";
+    titlePartialContents = fs.readFileSync(titlePartialFilename, 'utf8');
 
-        var view = {};
+    navPartialFilename = "components/navigation.mustache";
+    navPartialContents = fs.readFileSync(navPartialFilename, 'utf8');
 
-        var headerPartialFilename = "components/header.mustache";
-
-        fs.readFile(headerPartialFilename, 'utf8', function(err, headerContents) {
-            if (err) throw err;
-            console.log('Component Read: ' + headerPartialFilename);
-            // console.log(headerContents);
-
-
-            var titlePartialFilename = "components/title.mustache";
-
-            fs.readFile(titlePartialFilename, 'utf8', function(err, titleContents) {
-                if (err) throw err;
-                // console.log('Partial Read: ' + navPartialFilename);
-                // console.log(navContents);
-
-
-                var navPartialFilename = "components/navigation.mustache";
-
-                fs.readFile(navPartialFilename, 'utf8', function(err, navContents) {
-                    if (err) throw err;
-                    console.log('Component Read: ' + navPartialFilename);
-                    // console.log(navContents);
-
-                    var footerPartialFilename = "components/footer.mustache";
-
-                    fs.readFile(footerPartialFilename, 'utf8', function(err, footerContents) {
-                        if (err) throw err;
-                        console.log('Component Read: ' + footerPartialFilename);
-                        // console.log(footerContents);
-
-                        var pagePartialFilename = pageFilename;
-
-                        fs.readFile(pagePartialFilename, 'utf8', function(err, pageContents) {
-                            if (err) throw err;
-                            console.log('Page Read: ' + pagePartialFilename);
-                            // console.log(pageContents);
-
-                            var partials = {
-                                header: headerContents,
-                                title: titleContents,
-                                navigation: navContents,
-                                footer: footerContents,
-                                page: pageContents,
-                            }
-
-                            output = Mustache.render(layoutContents, view, partials);
-
-                            res.send(output);
-
-                            // console.log("Output: " + output);
-                            // return output;
-
-                        });
-                    });
-                });
-            });
-        });
-
-    });
-
-    console.log("Output: " + output);
-    return output;
-
+    footerPartialFilename = "components/footer.mustache";
+    footerPartialContents = fs.readFileSync(footerPartialFilename, 'utf8');
 }
 
+// ----------------------------------------------------------------------------
+
+function GeneratePage(req, res, pagePartialFilename)
+{
+    var pagePartialContents = fs.readFileSync(pagePartialFilename, 'utf8');
+
+    var view = {
+
+    };
+
+    var partials = {
+        header: headerPartialContents,
+        title: titlePartialContents,
+        navigation: navPartialContents,
+        footer: footerPartialContents,
+
+        page: pagePartialContents
+    };
+
+    output = Mustache.render(layoutContents, view, partials);
+
+    res.send(output);
+}
 
 // ----------------------------------------------------------------------------
 
@@ -152,74 +125,28 @@ function ScanDir(path) {
 
 function GeneratePosts(req, res, postFilenames)
 {
-    var layoutFilename = "components/layout.mustache";
-
-    fs.readFile(layoutFilename, 'utf8', function(err, layoutContents) {
-        if (err) throw err;
-        // console.log('File Read: ' + layoutFilename);
-        // console.log(layoutContents);
-
-        var view = {};
-
-        var headerPartialFilename = "components/header.mustache";
-
-        fs.readFile(headerPartialFilename, 'utf8', function(err, headerContents) {
-            if (err) throw err;
-            // console.log('Partial Read: ' + headerPartialFilename);
-            // console.log(headerContents);
-
-            var titlePartialFilename = "components/title.mustache";
-
-            fs.readFile(titlePartialFilename, 'utf8', function(err, titleContents) {
-                if (err) throw err;
-                // console.log('Partial Read: ' + navPartialFilename);
-                // console.log(navContents);
-
-                var navPartialFilename = "components/navigation.mustache";
-
-                fs.readFile(navPartialFilename, 'utf8', function(err, navContents) {
-                    if (err) throw err;
-                    // console.log('Partial Read: ' + navPartialFilename);
-                    // console.log(navContents);
-
-                    var footerPartialFilename = "components/footer.mustache";
-
-                    var output = "";
-
-                    fs.readFile(footerPartialFilename, 'utf8', function(err, footerContents) {
-                        if (err) throw err;
-                        // console.log('Partial Read: ' + footerPartialFilename);
-                        // console.log(footerContents);
-
-                        postFilenames.forEach(file => {
-
-                            // var pagePartialFilename = "posts/2016-10-07 12:00.00 The First Paper on Computers Generating Stories.txt";
-
-                            fs.readFile("./posts/" + file, 'utf8', function(err, pageContents) {
-                                if (err) throw err;
-                                // console.log('Partial Read: ' + pagePartialFilename);
-                                // console.log(pageContents);
-
-                                var partials = {
-                                    header: headerContents,
-                                    title: titleContents,
-                                    navigation: navContents,
-                                    footer: footerContents,
-                                    page: pageContents
-                                };
-
-                                output += Mustache.render(layoutContents, view, partials);
-                          });
-
-                          res.send(output);
-                          console.log(file);
-
-                        });
-                    });
-                });
-            });
-        });
+    var pagePartialContents = "";
+    postFilenames.forEach(file => {
+        pagePartialContents += fs.readFileSync("./posts/" + file, 'utf8')
+        console.log("- - " + pagePartialContents);
     });
+
+    var view = {
+
+    };
+
+    var partials = {
+        header: headerPartialContents,
+        title: titlePartialContents,
+        navigation: navPartialContents,
+        footer: footerPartialContents,
+
+        page: pagePartialContents
+    };
+
+    output = Mustache.render(layoutContents, view, partials);
+    res.send(output);
+    //   console.log(file);
 
 }
 

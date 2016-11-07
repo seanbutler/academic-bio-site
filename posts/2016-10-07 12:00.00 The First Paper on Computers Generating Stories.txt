@@ -1,22 +1,12 @@
-<div class = "container content">
-    <div class="row section">
-        <div class = "three columns">
-            <h4>7th october 2016</h4>
-        </div>
+<div class = "twelve columns animated fadeIn">
+    <h2>some notes on the very first paper about computer generated stories</h2>
+    <h6>7th october 2016</h6>
+    <p>klein, s. et al (1973) automatic novel writing. university of wisconsin technical report.</p>
 
-        <div class = "nine columns">
-
-            <h4>some notes on the very first paper about computer generated stories</h4>
-
-            <p>klein, s. et al (1973) automatic novel writing. university of wisconsin technical report.</p>
-
-            <h3>overview</h3>
-            <ul>
-                <li>modeled a mini-universe to simulate the story.</li>
-                <li>characters and events were governed by rules within the system.</li>
-                <li>used a semantic network to store the current state of the universe, the situation. also semantic network to encode the rules by which changes to the universe could happen, the events.</li>
-                <li>translation into english was carried out by a separate system of production rules.</li>
-            </ul>
-        </div>
-    </div>
+    <ul>
+        <li>modeled a mini-universe to simulate the story.</li>
+        <li>characters and events were governed by rules within the system.</li>
+        <li>used a semantic network to store the current state of the universe, the situation. also semantic network to encode the rules by which changes to the universe could happen, the events.</li>
+        <li>translation into english was carried out by a separate system of production rules.</li>
+    </ul>
 </div>
