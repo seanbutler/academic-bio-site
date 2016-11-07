@@ -87,6 +87,8 @@ function InitialisePartials()
 
 // ----------------------------------------------------------------------------
 
+// todo - pages should be generated on startup
+
 function GeneratePage(req, res, pagePartialFilename)
 {
     var pagePartialContents = fs.readFileSync(pagePartialFilename, 'utf8');
@@ -111,6 +113,9 @@ function GeneratePage(req, res, pagePartialFilename)
 
 // ----------------------------------------------------------------------------
 
+// todo add query parameters so can get part of blog
+// number, date, title, word, soundex, etc
+
 App.get('/blog', function (req, res) {
     var fileList = ScanDir('./posts/');
     GeneratePosts(req, res, fileList);
@@ -128,7 +133,7 @@ function GeneratePosts(req, res, postFilenames)
     var pagePartialContents = "";
     postFilenames.forEach(file => {
         pagePartialContents += fs.readFileSync("./posts/" + file, 'utf8')
-        console.log("- - " + pagePartialContents);
+        // console.log("- - " + pagePartialContents);
     });
 
     var view = {
