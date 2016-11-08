@@ -1,14 +1,16 @@
 <div class = "twelve columns animated fadeIn">
-
     <h2>some notes on tale-spin. an early computer story writer</h2>
     <h6>7th october 2016</h6>
 
     <p>klein, s. et al (1973) automatic novel writing. university of wisconsin technical report.</p>
-    <ul>
+
+    <p>sheldon klein and others wrote as far as i can tell the original paper on computers automatically generating narratives. their approach was to simulate mini-universe and</p>
+
+<!--    <ul>
         <li>modeled a mini-universe to simulate the story.</li>
         <li>characters and events were governed by rules within the system.</li>
         <li>used a semantic network to store the current state of the universe, the situation. also semantic network to encode the rules by which changes to the universe could happen, the events.</li>
         <li>translation into english was carried out by a separate system of production rules.</li>
     </ul>
-
+-->
 </div>

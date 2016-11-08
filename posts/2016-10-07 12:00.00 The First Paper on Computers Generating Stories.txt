@@ -1,12 +1,47 @@
 <div class = "twelve columns animated fadeIn">
-    <h2>some notes on the very first paper about computer generated stories</h2>
-    <h6>7th october 2016</h6>
+    <h6>7th october 2016</h6><h2>notes on 'automatic novel writing' the first paper on narrative generation by computer</h2>
+
+
     <p>klein, s. et al (1973) automatic novel writing. university of wisconsin technical report.</p>
 
+    <h5>overview</h5>
+
+
+    <p>sheldon klein and others wrote (as far as i can tell) the original paper on computers automatically generating narratives. their approach set the tone for narrative generation for the next 20 years.</p>
+
+    <p>a semantic deep structure of the universe was encoded in the form of what we would now call a semantic network. nodes being semantic objects and arcs being the relationships between them.
+    </p>
+
+    <p>the simulation also contains rules which can alter the the universe. these are used to represent events in the story. the rules themselves were also semantic networks.
+    </p>
+
+    <p>klein states the presuppositional information of the rules is coded within them, which we take to mean the pre-requisites. that which has to occur for the rules to be applied.
+    </p>
+
+    <p>the final narrative it built from the sequence of changes to the modelled stat of the mini-universe.
+    </p>
+
+    <h5>implementation details</h5>
+
+    <p>the network itself was stored as triples, every atom of which had a unique id, as did each triple. in this way any triple could link to any atom or another triple by referencing its id.<p>
+
+<p>the triples themselves could be listed together in sublists or separately and indexed via their id.</p>
+
+    <pre>
+    1. O(man) -> R(break)->O(window)
+              R(break)->R(with)->O(hammer)
+    2. O(man) -> R(in) ->O(park)
+    </pre>
+
+<p>which means, "the man in the park broke the window with the hammer"</p>
+<p>with the benefit of time passing and hindsight we can of course see this isnt a million miles from Sowa's conceptual structures.</p>
+
+<!--<h6>notes...</h6>
     <ul>
         <li>modeled a mini-universe to simulate the story.</li>
         <li>characters and events were governed by rules within the system.</li>
         <li>used a semantic network to store the current state of the universe, the situation. also semantic network to encode the rules by which changes to the universe could happen, the events.</li>
         <li>translation into english was carried out by a separate system of production rules.</li>
     </ul>
+-->
 </div>

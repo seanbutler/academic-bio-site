@@ -1,0 +1,40 @@
+<div class = "twelve columns animated fadeIn">
+
+    <h2>simple node templated website & blog system</h2>
+    <h6>3rd november 2016</h6>
+
+    <p>to start the blog off lets have a look at the site technology and code itself. rather than using wordpress or some heavyweight package with plugins and databases, i thought it might be an interesting learning process to see if a lightweight solution could be rolled from a few lines of code.
+    also an opportunity to develop some javascript skills.
+    but a solution that provides most of the features necessary for a personal site / blog. </p>
+
+    <h5>desired features</h5>
+
+    <p>consistent style - templates used </p>
+    
+    <p>you can get the source code here <a href = "https://github.com/seanbutler/academic-bio-site">https://github.com/seanbutler/academic-bio-site</a>currently the project is a bit messy in that its a dir structure, a packages.json file and the contents of the blog itself.</p>
+
+    <h4>quick modern web development environment</h4>
+    <h5>OSX</h5>
+
+    <p>first install homebrew (<a href = "http://brew.sh/">http://brew.sh/</a>) if you dont know what this is, trust me, its magical, a portal into a hidden world of development tools not controlled by apple.
+    </p>
+    <code>
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    </code>
+
+
+    <p>you will need to have node (<a href = "https://www.npmjs.com/">https://www.npmjs.com/<a/> installed to get started with node.</p>
+    <code> brew install node</code>
+
+
+    <p>finally, pull the repo and download it to a local dir on your machine. there are various ways to do this, i use the command line for my work and github desktop for my hobby work. both are fine.</p>
+
+
+    <ul>
+        <li> skeleton.io - small & simple css boilerplate, smaller than bootstrap, but looks nice out of the box</li>
+        <li> express - node middleware for http & routing</li>
+        <li> node.js - execution on the server hardware</li>
+        <li> mustache - for quick and easy templating on node in javascript</li>
+    </ul>
+
+</div>
