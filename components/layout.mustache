@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway|Gilda+Display" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Miriam+Libre:400,700" rel="stylesheet">         -->
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="lib/css/skeleton.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="lib/animate.css" media="screen" />
 
@@ -12,17 +13,23 @@
         <div class = "container content">
 
             <div class="row section">
-                <div class = "three columns ">
+                <div class = "twelve columns ">
                     {{>header}}
                 </div>
-                <div class = "nine columns ">
+            </div>
+
+            <div class="row section">
+                <div class = "twelve columns ">
                     {{>page}}
                 </div>
             </div>
 
             <div class="row section">
-                {{>footer}}
+                <div class = "twelve columns ">
+                    {{>footer}}
+                </div>
             </div>
         </div>
+
     </body>
 </html>

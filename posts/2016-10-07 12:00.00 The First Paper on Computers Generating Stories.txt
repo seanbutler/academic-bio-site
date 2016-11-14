@@ -1,6 +1,5 @@
 <div class = "twelve columns animated fadeIn">
-    <h6>7th october 2016</h6><h2>notes on 'automatic novel writing' the first paper on narrative generation by computer</h2>
-
+    <h2>notes on 'automatic novel writing' the first paper on narrative generation by computer</h2><h6>7th october 2016</h6>
 
     <p>klein, s. et al (1973) automatic novel writing. university of wisconsin technical report.</p>
 
@@ -27,11 +26,11 @@
 
 <p>the triples themselves could be listed together in sublists or separately and indexed via their id.</p>
 
-    <pre>
-    1. O(man) -> R(break)->O(window)
-              R(break)->R(with)->O(hammer)
-    2. O(man) -> R(in) ->O(park)
-    </pre>
+<pre>
+1. O(man) -> R(break)->O(window)
+          R(break)->R(with)->O(hammer)
+2. O(man) -> R(in) ->O(park)
+</pre>
 
 <p>which means, "the man in the park broke the window with the hammer"</p>
 <p>with the benefit of time passing and hindsight we can of course see this isnt a million miles from Sowa's conceptual structures.</p>
