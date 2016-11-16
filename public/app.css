@@ -1,37 +1,49 @@
 
 body
 {
-    background: #0F0800;
-    color: #FF7E00;
-
-    font-size: 2vw;
+    font-size: 2.1vw;
     font-weight: normal;
     font-family: 'Space Mono', monospace;
+
+    color: white;
+    background-color: #222;
 
 }
 
 h1, h2, h3, h4, h5, h6
 {
-    color: black;
-    background-color: #FF7E00;
-    font-size: 2vw;
-    display: inline
+    background-color: white;
+    color: #222;
+
+    font-size: 2.1vw;
+    font-weight: normal;
+    font-family: 'Space Mono', monospace;
+
+    margin-right: 3px;
+    padding-right: 1vw;
+    padding-left: 1vw;
+
+    display: inline;
 }
 
 a {
-    background: #0F0800;
-    color: #FF7E00;
+    color: white;
 }
 
 a:hover {
-    background: #0F0800;
-    color: #FF7E00;
+    background-color: white;
+    color: #222;
 }
 
 th, td {
     padding: 0.5rem 1.5rem 0 1.5rem;
     text-align: left;
     border-bottom: 0px;
+}
+
+p {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
 }
 
 .container {

@@ -10,7 +10,7 @@
     <h5>desired features</h5>
 
     <p>consistent style - templates used </p>
-    
+
     <p>you can get the source code here <a href = "https://github.com/seanbutler/academic-bio-site">https://github.com/seanbutler/academic-bio-site</a>currently the project is a bit messy in that its a dir structure, a packages.json file and the contents of the blog itself.</p>
 
     <h4>quick modern web development environment</h4>
