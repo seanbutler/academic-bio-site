@@ -13,6 +13,9 @@ App.use(Express.static('lib'));
 
 // TODO - make blog more flexible with proper simple query on title and/or date-time
 
+
+InitialisePartials();
+
 //
 // STARTUP
 //
@@ -27,28 +30,28 @@ App.listen(process.env.PORT || 3000, function () {
 // ROUTING
 //
 
-App.get('/', function (req, res) {
-    GeneratePage(req, res, 'pages/root.mustache')
-});
+// App.get('/', function (req, res) {
+//     GeneratePage(req, res, 'pages/root.mustache', layoutContents)
+// });
 
 App.get('/teaching', function (req, res) {
-    GeneratePage(req, res, 'pages/teaching.mustache')
+    GeneratePage(req, res, 'pages/teaching.mustache', layout2Contents)
 });
 
-App.get('/research', function (req, res) {
-    GeneratePage(req, res, 'pages/research.mustache')
+App.get('/publications', function (req, res) {
+    GeneratePage(req, res, 'pages/publications.mustache', layout2Contents)
 });
 
 App.get('/games', function (req, res) {
-    GeneratePage(req, res, 'pages/games.mustache')
+    GeneratePage(req, res, 'pages/games.mustache', layout2Contents)
 });
 
 App.get('/cannon', function (req, res) {
-    GeneratePage(req, res, 'pages/cannon.mustache')
+    GeneratePage(req, res, 'pages/cannon.mustache', layout2Contents)
 });
 
 App.get('/cv', function (req, res) {
-    GeneratePage(req, res, 'pages/cv.mustache')
+    GeneratePage(req, res, 'pages/cv.mustache', layout2Contents)
 });
 
 // ----------------------------------------------------------------------------
@@ -58,17 +61,21 @@ App.get('/cv', function (req, res) {
 //
 
 var layoutFilename, layoutContents;
+var layout2Filename, layout2Contents;
 var headerPartialFilename, headerPartialContents;
 var titlePartialFilename, titlePartialContents;
 var navPartialFilename, navPartialContents;
 var footerPartialFilename, footerPartialContents;
 
-InitialisePartials();
+
 
 function InitialisePartials()
 {
     layoutFilename = "components/layout.mustache";
     layoutContents = fs.readFileSync(layoutFilename, 'utf8');
+
+    layout2Filename = "components/layout2.mustache";
+    layout2Contents = fs.readFileSync(layout2Filename, 'utf8');
 
     headerPartialFilename = "components/header.mustache";
     headerPartialContents = fs.readFileSync(headerPartialFilename, 'utf8');
@@ -87,7 +94,7 @@ function InitialisePartials()
 
 // todo - pages should be generated on startup
 
-function GeneratePage(req, res, pagePartialFilename)
+function GeneratePage(req, res, pagePartialFilename, layout)
 {
     var pagePartialContents = fs.readFileSync(pagePartialFilename, 'utf8');
 
@@ -104,7 +111,7 @@ function GeneratePage(req, res, pagePartialFilename)
         page: pagePartialContents
     };
 
-    output = Mustache.render(layoutContents, view, partials);
+    output = Mustache.render(layout, view, partials);
 
     res.send(output);
 }
@@ -114,9 +121,9 @@ function GeneratePage(req, res, pagePartialFilename)
 // todo add query parameters so can get part of blog
 // number, date, title, word, soundex, etc
 
-App.get('/blog', function (req, res) {
+App.get('/', function (req, res) {
     var fileList = ScanDir('./posts/');
-    GeneratePosts(req, res, fileList);
+    GeneratePosts(req, res, fileList, layout2Contents);
 });
 
 function ScanDir(path) {
@@ -126,7 +133,7 @@ function ScanDir(path) {
     return dirList;
 }
 
-function GeneratePosts(req, res, postFilenames)
+function GeneratePosts(req, res, postFilenames, layout)
 {
     var pagePartialContents = "";
     postFilenames.forEach(file => {
@@ -147,7 +154,7 @@ function GeneratePosts(req, res, postFilenames)
         page: pagePartialContents
     };
 
-    output = Mustache.render(layoutContents, view, partials);
+    output = Mustache.render(layout, view, partials);
     res.send(output);
     //   console.log(file);
 
