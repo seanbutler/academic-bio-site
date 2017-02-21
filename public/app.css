@@ -11,11 +11,15 @@
     display: inline;
 }*/
 
+h1, h2, h3
+{
+    color: #FF8822;
+}
+
 h1
 {
     display: inline;
 }
-
 
 /*h4, h5, h6
 {
@@ -44,11 +48,11 @@ a:hover {
     margin-bottom: 3vw;
 }*/
 
-/*.container {
-    font-size: 1.6vw;
-    line-height: 2;
-    max-width:  none;
-}*/
+.container {
+    /*font-size: 1.6vw;
+    line-height: 2;*/
+    max-width: 800px;
+}
 
 /*.content {
     font-size: 1.6vw;
@@ -64,6 +68,6 @@ a:hover {
 
 .navigation {
     /*font-size: 1.6vw;*/
-    /*line-height: 2;*/
+    line-height: 2;
     float: right;
 }

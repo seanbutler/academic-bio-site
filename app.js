@@ -129,7 +129,9 @@ App.get('/', function (req, res) {
 function ScanDir(path) {
     const fs = require('fs');
     var dirList = fs.readdirSync(path);
-    console.log(dirList);
+    // console.log(dirList);
+    dirList.reverse();
+    // console.log(dirList);
     return dirList;
 }
 
