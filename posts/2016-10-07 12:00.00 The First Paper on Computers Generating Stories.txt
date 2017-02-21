@@ -3,24 +3,15 @@
     <h6>7th october 2016</h6>
 
     <p>sheldon klein and others wrote the original paper on computers automatically generating narratives. their approach set the tone for narrative generation for the next 20 years.</p>
+    <p>a semantic deep structure of the universe was encoded in the form of what we would now call a semantic network. nodes being semantic objects and arcs being the relationships between them.</p>
+    <p>the simulation also contains rules which can alter the the universe. these are used to represent events in the story. the rules themselves were also semantic networks.</p>
 
-    <p>a semantic deep structure of the universe was encoded in the form of what we would now call a semantic network. nodes being semantic objects and arcs being the relationships between them.
-    </p>
-
-    <p>the simulation also contains rules which can alter the the universe. these are used to represent events in the story. the rules themselves were also semantic networks.
-    </p>
-
-    <p>klein states the presuppositional information of the rules is coded within them, which we take to mean the pre-requisites. that which has to occur for the rules to be applied.
-    </p>
-
-    <p>the final narrative it built from the sequence of changes to the modelled stat of the mini-universe.
-    </p>
+    <p>klein states the presuppositional information of the rules is coded within them, which we take to mean the pre-requisites. that which has to occur for the rules to be applied.</p>
+    <p>the final narrative it built from the sequence of changes to the modelled stat of the mini-universe.</p>
 
     <h5>implementation details</h5>
-
     <p>the network itself was stored as triples, every atom of which had a unique id, as did each triple. in this way any triple could link to any atom or another triple by referencing its id.<p>
-
-<p>the triples themselves could be listed together in sublists or separately and indexed via their id.</p>
+    <p>the triples themselves could be listed together in sublists or separately and indexed via their id.</p>
 
 <pre>
 1. O(man) -> R(break)->O(window)
