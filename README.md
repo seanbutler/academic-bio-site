@@ -8,7 +8,7 @@ a simple node dynamic website featuring templates, pages & a simple blog.
 * skeleton - boilerplate css so default is neat
 
 currently used for my academic bio & blog, super simple, needs software design/refactoring
-you can see it in action here... https://academic-bio-site.herokuapp.com/
+you can see it in action here... seanbutler.net or seanbutler.me
 
 done
 ---
@@ -26,3 +26,4 @@ todo
 * blog post tags?
 * handle errors/exceptions better
 * integrate markdown or similar
+* update to a nicer css framework
