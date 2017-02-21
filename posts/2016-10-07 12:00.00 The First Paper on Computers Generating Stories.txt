@@ -1,4 +1,4 @@
-
+<div class = "animated fadeIn">
 <h3>klein's,original paper, possibly the first real story generator.</h2>
 <h5>7th october 2016</h5>
 
@@ -9,7 +9,7 @@
 <p>klein states the presuppositional information of the rules is coded within them, which we take to mean the pre-requisites. that which has to occur for the rules to be applied.</p>
 <p>the final narrative it built from the sequence of changes to the modelled stat of the mini-universe.</p>
 
-<h3>implementation details</h3>
+<h4>implementation details</h4>
 <p>the network itself was stored as triples, every atom of which had a unique id, as did each triple. in this way any triple could link to any atom or another triple by referencing its id.<p>
 <p>the triples themselves could be listed together in sublists or separately and indexed via their id.</p>
 
@@ -21,3 +21,4 @@
 
 <p>which means, "the man in the park broke the window with the hammer"</p>
 <p>with the benefit of time passing and hindsight we can of course see this isnt a million miles from Sowa's conceptual structures.</p>
+</div>
