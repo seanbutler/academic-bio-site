@@ -1,7 +1,7 @@
 <div class = "twelve columns animated fadeIn">
-    <h2>klein, s. et al (1973) automatic novel writing. university of wisconsin technical report.</h2>
+    <h2>klein's,original paper, possibly the first real story generator.</h2>
     <h6>7th october 2016</h6>
-
+    <h3>klein, s. et al (1973) automatic novel writing. university of wisconsin technical report.</h3>
     <p>sheldon klein and others wrote the original paper on computers automatically generating narratives. their approach set the tone for narrative generation for the next 20 years.</p>
     <p>a semantic deep structure of the universe was encoded in the form of what we would now call a semantic network. nodes being semantic objects and arcs being the relationships between them.</p>
     <p>the simulation also contains rules which can alter the the universe. these are used to represent events in the story. the rules themselves were also semantic networks.</p>
