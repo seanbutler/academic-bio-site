@@ -2,7 +2,7 @@
     <h2>some notes on tale-spin. an early computer story writer</h2>
     <h6>11th  november 2016</h6>
 
-    <h6>Meehan, J.R. (1977) TALE-SPIN, An interactive Program that Writes Stories. IJCAI 77</h6>
+    <h3>Meehan, J.R. (1977) TALE-SPIN, An interactive Program that Writes Stories. IJCAI 77</h3>
 
     <p>TALE-SPIN operates by simulating the <i>rational behaviour</i> of characters in a world. Its structured into three parts: Problem Solver, Assertion Mechanism, and Inference Mechanism.</p>
 
