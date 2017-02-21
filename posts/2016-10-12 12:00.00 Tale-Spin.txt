@@ -6,7 +6,6 @@
 
     <p>TALE-SPIN operates by simulating the <i>rational behaviour</i> of characters in a world. Its structured into three parts: Problem Solver, Assertion Mechanism, and Inference Mechanism.</p>
 
-
     <p>With TALE-SPIN the user answers questions about the initial setting or chooses a moral such as <i>never trust flatterers</i> from a list.</p>
     <p>TALE-SPIN is a problem solver. This means goals are substituted for simpler goals and events which in turn are used to achieve the user supplied goal. This is combined with an event memory of facts asserted (or events which happened) through the problem solving process. An inference mechanism determines the consequences of events and asserts them as facts too. New goals can also be asserted (added to the event memory) and this causes the problem solver to continue working.</p>
     <p>With this mechanism is a domain database of <i>conceptual dependancies</i> (sowa) and <i>scripts</i> (schank and abelson).</p>
