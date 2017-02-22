@@ -1,13 +1,17 @@
 <div class = "animated fadeIn">
 <h3>klein's,original paper, possibly the first real story generator.</h2>
 <h5>7th october 2016</h5>
-
 <h4>klein, s. et al (1973) automatic novel writing. university of wisconsin technical report.</h4>
+
 <p>sheldon klein and others wrote the original paper on computers automatically generating narratives. their approach set the tone for narrative generation for the next 20 years.</p>
-<p>a semantic deep structure of the universe was encoded in the form of what we would now call a semantic network. nodes being semantic objects and arcs being the relationships between them.</p>
-<p>the simulation also contains rules which can alter the the universe. these are used to represent events in the story. the rules themselves were also semantic networks.</p>
-<p>klein states the presuppositional information of the rules is coded within them, which we take to mean the pre-requisites. that which has to occur for the rules to be applied.</p>
-<p>the final narrative it built from the sequence of changes to the modelled stat of the mini-universe.</p>
+
+<p>they created a network of nodes and arcs in what we would now call a semantic network. nodes representing the concepts and the arcs being the relationships between them.</p>
+
+<p>in this way they mainteined a graph database of the current status of the story universe as it were.</p>
+
+<p>the simulation also contains rules which can alter the the universe. these are used to represent events in the story. the rules themselves were also semantic networks. klein states the presuppositional information of the rules is coded within them, which we take to mean; the rules contain their own pre requisites <i>and</i> the transformation to be applied on the larger semantic network which occurs as the rules are applied.</p>
+
+<p>the final narrative it built from the sequence of changes to the modelled state of the mini-universe. the intial and final states of the universe are represented by the contents of the database and the sequence of rules applied represent the events of the story</p>
 
 <h4>implementation details</h4>
 <p>the network itself was stored as triples, every atom of which had a unique id, as did each triple. in this way any triple could link to any atom or another triple by referencing its id.<p>
