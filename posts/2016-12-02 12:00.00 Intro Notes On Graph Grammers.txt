@@ -5,8 +5,10 @@
 <h4>what is a graph</h4>
 <p>A graph is a structure of nodes, which can be thought of as junctions and are often called vertices. These nodes can be joined together by arcs or edges. These two kinds of objects makeup a shape such as a chain, hierarchy, tree, or lattice or similar. The positions of the nodes are not usually important except in so far as their relationships which are defined by wether they are joined by an arc.</p>
 <p>Often the nodes can be used to store information (labels) and so can  the arcs. Algorithms exist which work on the structure of the graph, and the graph can be used to give additional structure and define relationships between a variety of pieces of information.</p>
+
 <h4>Formal Definition of a Graph</h4>
 <p>In terms of set theory we can say: a graph is a pair of finite sets (V, E). Where V is a set of vertices. and E is a set of edges, an edge being an ordered pair of vertices.</p>
+
 <h4>Formal Definition of a Graph Grammar</h4>
 <p>Graph grammars are a generalisation of traditional grammars. Traditional grammars are 1 dimensional in that they operate on strings.</p>
 </div>

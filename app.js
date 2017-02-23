@@ -38,6 +38,10 @@ App.get('/teaching', function (req, res) {
     GeneratePage(req, res, 'pages/teaching.mustache', layout2Contents)
 });
 
+App.get('/community', function (req, res) {
+    GeneratePage(req, res, 'pages/community.mustache', layout2Contents)
+});
+
 App.get('/publications', function (req, res) {
     GeneratePage(req, res, 'pages/publications.mustache', layout2Contents)
 });
