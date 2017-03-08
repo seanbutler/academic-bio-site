@@ -1,78 +1,56 @@
+html{
+    font-family: helvetica;
+    font-weight: 100;
+    color: grey;
 
-body
-{
-    background-color: #FFF;
-    margin: 0;
+    width: 80%;
+    margin-left: 10%;
+    overflow-y: scroll;
 
-    /*border-top: 3px solid #FF8822;*/
-}
-
-h1
-{
-    font-size: 4.0vw;
-    color: #FF8822;
-    display: inline;
-}
-
-h2, h3
-{
-    font-size: 3.0vw;
-    border-top: 1px solid #FF8822;
-    color: #FF8822;
-}
-
-h4, h5, h6
-{
-    font-size: 2.0vw;
-    color: #FF8822;
-}
-
-
-a
-{
-    color: #222;
-}
-
-a:hover {
-    color: #FF8822;
-}
-
-th, td {
-    padding: 0.5rem 1.5rem 0 1.5rem;
-    text-align: left;
-    border-bottom: 0px;
-    font-size: 1.4vw;
-}
-
-p {
-    /*font-size: 1.4vw;*/
-    /*line-height: 2;
-    margin-top: 3vw;
-    margin-bottom: 3vw;*/
-}
-
-
-
-.container {
+    font-family: 'Space Mono', monospace;
+    font-weight:lighter;
     font-size: 1.3vw;
-    line-height: 2;
-    max-width: 70%;
 }
 
-/*.content {
-    font-size: 1.6vw;
-    line-height: 2;
-    margin-top: 2vw;
-}*/
+h1 {
+    font-family: 'Space Mono', monospace;
+    font-weight:lighter;
+    text-decoration:underline;
+    font-size: 2vw;
+}
 
-/*.section {
-    font-size: 1.6vw;
-    line-height: 2;
-    margin-top: 2vw;
-}*/
+h2, h3, h4, h5, h6 {
+    font-family: 'Space Mono', monospace;
+    font-weight:lighter;
+    text-decoration: underline;
+    font-size: 1.3vw;
+}
+
+th {
+    font-weight:    normal;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: lightgrey;
+
+    padding: 0 0.5vw 0 0.5vw;
+}
+
+a:hover
+{
+    color: orange;
+    background-color: lightgrey;
+}
+
+a:active
+{
+    color: white;
+    background-color: orange;
+}
+
 
 .navigation {
-    /*font-size: 1.4vw;*/
-    /*line-height: 4;*/
-    float: right;
+    /*float: right;*/
 }
