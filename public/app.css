@@ -15,15 +15,25 @@ html{
 h1 {
     font-family: 'Space Mono', monospace;
     font-weight:lighter;
-    text-decoration:underline;
-    font-size: 2vw;
+    color: orange;
+    /*background-color: lightgrey;*/
+    /*padding: 0 0.5vw 0 0.5vw;*/
+    margin: 1vw 0 1vw 0;
+    padding: 0;
+    font-size: 5vw;
+    display: inline;
 }
 
 h2, h3, h4, h5, h6 {
     font-family: 'Space Mono', monospace;
     font-weight:lighter;
-    text-decoration: underline;
-    font-size: 1.3vw;
+    text-decoration: none;
+
+    color: orange;
+    font-size: 2vw;
+    margin: 1vh 0 0.5vh 0;
+    padding: 0;
+    /*display: inline;*/
 }
 
 th {
@@ -31,11 +41,7 @@ th {
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    background-color: lightgrey;
-
-    padding: 0 0.5vw 0 0.5vw;
+    color: orange;
 }
 
 a:hover
@@ -52,5 +58,6 @@ a:active
 
 
 .navigation {
-    /*float: right;*/
+    float: right;
+    display: inline;
 }
