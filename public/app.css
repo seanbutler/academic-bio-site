@@ -6,15 +6,18 @@ html{
     font-weight: 100;
     font-size: 1.4vw;
     color: #777;
+    /*color: white;*/
 
     overflow-y: scroll;
+    /*background: orange;*/
 }
 
 h1 {
     /*font-weight: 100;*/
     /*text-decoration: underline;*/
     /*font-size: 2.2vw;*/
-    color: grey;
+    /*color: grey;*/
+    color: orange;
     /*text-decoration: underline;*/
     /*display: inline;*/
 }
@@ -23,7 +26,9 @@ h2, h3, h4, h5, h6 {
     /*font-weight: 100;*/
     /*text-decoration: underline;*/
     font-size: 1.4vw;
-    color: grey;
+    /*color: grey;*/
+    color: orange;
+
     /*text-decoration: underline;*/
     /*display: inline;*/
 }
@@ -41,18 +46,30 @@ a {
 
 a:hover
 {
-    background-color: grey;
+    background-color: orange;
 
 }
 
 a:active
 {
-    color: white;
-    background-color: orange;
+    color: orange;
+    background-color: white;
 }
 
 
 .navigation {
     /*float: right;*/
     /*display: inline;*/
+}
+
+
+.row {
+    margin: 2vw 0 2vw 0;
+    /*border: 1px solid red;*/
+}
+
+
+.footer {
+/*float: right;*/
+    /*border-top: 1px solid lightgrey;*/
 }
