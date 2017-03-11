@@ -1,38 +1,30 @@
 html{
-    font-family: helvetica;
-    font-weight: 100;
-    color: grey;
-
     width: 80%;
     margin-left: 10%;
-    overflow-y: scroll;
 
-    font-family: 'Space Mono', monospace;
-    font-weight:lighter;
-    font-size: 1.3vw;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 1.4vw;
+    color: #777;
+
+    overflow-y: scroll;
 }
 
 h1 {
-    font-family: 'Space Mono', monospace;
-    font-weight:lighter;
-    color: orange;
-    /*background-color: lightgrey;*/
-    /*padding: 0 0.5vw 0 0.5vw;*/
-    margin: 1vw 0 1vw 0;
-    padding: 0;
-    font-size: 5vw;
-    display: inline;
+    /*font-weight: 100;*/
+    /*text-decoration: underline;*/
+    /*font-size: 2.2vw;*/
+    color: grey;
+    /*text-decoration: underline;*/
+    /*display: inline;*/
 }
 
 h2, h3, h4, h5, h6 {
-    font-family: 'Space Mono', monospace;
-    font-weight:lighter;
-    text-decoration: none;
-
-    color: orange;
-    font-size: 2vw;
-    margin: 1vh 0 0.5vh 0;
-    padding: 0;
+    /*font-weight: 100;*/
+    /*text-decoration: underline;*/
+    font-size: 1.4vw;
+    color: grey;
+    /*text-decoration: underline;*/
     /*display: inline;*/
 }
 
@@ -41,13 +33,16 @@ th {
 }
 
 a {
-    color: orange;
+    color: white;
+    background-color: lightgrey;
+    text-decoration: none;
+    padding: 0.25vw 0.5vw 0.25vw 0.5vw;
 }
 
 a:hover
 {
-    color: orange;
-    background-color: lightgrey;
+    background-color: grey;
+
 }
 
 a:active
@@ -58,6 +53,6 @@ a:active
 
 
 .navigation {
-    float: right;
-    display: inline;
+    /*float: right;*/
+    /*display: inline;*/
 }
