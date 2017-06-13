@@ -1,4 +1,4 @@
-# academic-bio-site
+# crispy-system
 
 a simple node dynamic website featuring templates, pages & a simple blog.
 
